@@ -126,6 +126,7 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Binary Search\BinarySearch.h" />
     <ClInclude Include="Sequential Search\SequentialSearch.h" />
     <ClInclude Include="SSTable.h" />
   </ItemGroup>

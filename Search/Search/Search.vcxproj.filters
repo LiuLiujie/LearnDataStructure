@@ -26,5 +26,8 @@
     <ClInclude Include="Sequential Search\SequentialSearch.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Binary Search\BinarySearch.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
