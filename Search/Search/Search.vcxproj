@@ -123,12 +123,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="BST&amp;AVL\BalanceSortTree.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Binary Search\BinarySearch.h" />
+    <ClInclude Include="BST&amp;AVL\BalanceSortTree.h" />
     <ClInclude Include="Sequential Search\SequentialSearch.h" />
-    <ClInclude Include="SSTable.h" />
+    <ClInclude Include="Type.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
