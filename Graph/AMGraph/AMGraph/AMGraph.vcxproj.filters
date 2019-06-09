@@ -18,33 +18,18 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="BST&amp;AVL\BalanceSortTree.cpp">
+    <ClCompile Include="AMGraph.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="BST&amp;AVL\AVLTree.cpp">
-      <Filter>头文件</Filter>
-    </ClCompile>
-    <ClCompile Include="Btree\Btree.cpp">
+    <ClCompile Include="Graph.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Sequential Search\SequentialSearch.h">
+    <ClInclude Include="AMGraph.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Binary Search\BinarySearch.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Type.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="BST&amp;AVL\BalanceSortTree.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="BST&amp;AVL\AVLTree.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="Btree\Btree.h">
+    <ClInclude Include="Graph.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
