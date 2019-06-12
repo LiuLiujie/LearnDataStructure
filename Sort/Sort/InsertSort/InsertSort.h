@@ -10,6 +10,6 @@ public:
 	~InsertSort();
 
 private:
-	void ShellInsert(SqList& L, int dk);
+	void ShellInsert(SqList& L, int dk);//dkÎªÔöÁ¿
 };
 

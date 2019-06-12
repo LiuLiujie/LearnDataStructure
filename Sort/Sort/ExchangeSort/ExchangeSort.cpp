@@ -45,5 +45,12 @@ void ExchangeSort::QSort(SqList& L, int low, int high)
 
 int ExchangeSort::Partition(SqList& L, int low, int high)
 {
+	L.r[0] = L.r[low];//用子表的第一个位置记录
+	int pivokey = L.r[0].key;
+	while (low < high)
+	{
+		while (low < high && L.r[high].key >= pivokey) high--;
+		L.r[low] = L.r[high];
+	}
 	return 0;
 }

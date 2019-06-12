@@ -126,10 +126,12 @@
     <ClCompile Include="ExchangeSort\ExchangeSort.cpp" />
     <ClCompile Include="InsertSort\InsertSort.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="SelectSort\SelectSort.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="ExchangeSort\ExchangeSort.h" />
     <ClInclude Include="InsertSort\InsertSort.h" />
+    <ClInclude Include="SelectSort\SelectSort.h" />
     <ClInclude Include="Type.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

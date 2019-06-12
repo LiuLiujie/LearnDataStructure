@@ -21,12 +21,24 @@
     <ClCompile Include="InsertSort\InsertSort.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="ExchangeSort\ExchangeSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectSort\SelectSort.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Type.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="InsertSort\InsertSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ExchangeSort\ExchangeSort.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SelectSort\SelectSort.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

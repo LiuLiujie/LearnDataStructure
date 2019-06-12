@@ -168,6 +168,12 @@ void Graph::Sort(Edge* edge)
 
 void Graph::ShortestPath(AMGraph* G, int v0)
 {
+	/*错误抓取*/
+	if (v0 == -1)
+	{
+		std::cout << "节点不存在" << std::endl;
+		return;
+	}
 	/*初始化*/
 	int n = G->vexNum;//保存顶点个数
 	for (int v = 0; v < n; v++)
@@ -281,5 +287,12 @@ void Graph::MiniSpanTree()
 void Graph::ShortestPath(VerTexType u)
 {
 	int v0 = LocateVex(AMG, u);
-	ShortestPath(AMG, v0);
+	if (v0 != -1)
+	{
+		ShortestPath(AMG, v0);
+	}
+	else {
+		std::cout << "节点不存在" << std::endl;
+		return;
+	}
 }

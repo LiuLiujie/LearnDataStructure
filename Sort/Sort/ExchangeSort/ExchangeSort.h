@@ -4,7 +4,7 @@ class ExchangeSort
 {
 public:
 	void BubbleSort(SqList &L);
-	void QuickSort(SqList &L);
+	void QuickSort(SqList &L);//这个快排很难理解,换一个
 	ExchangeSort();
 	~ExchangeSort();
 
