@@ -38,6 +38,14 @@ void SelectSort::HeapSort(SqList& L)
 	}
 }
 
+SelectSort::SelectSort()
+{
+}
+
+SelectSort::~SelectSort()
+{
+}
+
 void SelectSort::CreateHeap(SqList& L)
 {
 	int n = L.length;
