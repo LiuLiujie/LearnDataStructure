@@ -1,5 +1,6 @@
 # LearnDataStructure
+Comments are all Chinese!~
+
 I use this repo to learn Data Structure
 
-2019.5.23
-Add: Search - Squential Search
+Using Visual Studio Community 2019, you can open this project directly in VS2019
