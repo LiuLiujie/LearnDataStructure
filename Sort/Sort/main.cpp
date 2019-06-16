@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
 	InsertSort test;
-	MergingSort testMerging;
+	MergingSort testMerging;//tested
 
 	/*²âÊÔÊı¾İ*/
 	SqList L;
