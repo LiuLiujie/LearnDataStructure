@@ -2,7 +2,9 @@
 
 typedef int KeyType;
 typedef char InfoType;
+//定义了B树最多结点数
 #define BTOrder 3
+
 struct ElemType {
 	KeyType key;//关键字域
 	InfoType otherInfo;//其他域
@@ -38,6 +40,7 @@ struct Result
 	int i;//在节点中的关键字序号,1~m
 	int tag;//1表示查找成功,0表示失败
 };
+
 class BTNode
 {
 	friend class BTree;
@@ -45,7 +48,7 @@ private:
 	int keyNum;//结点中关键字个数
 	BTNode* parent;//指向双亲结点
 	KeyType K[BTOrder + 1];//关键字,0未用
-	BTNode* ptr[BTOrder + 1];//记录指针向量
+	BTNode* ptr[BTOrder + 1];//记录指针向量,0使用
 
 	int Search(KeyType key)//未测试
 	{

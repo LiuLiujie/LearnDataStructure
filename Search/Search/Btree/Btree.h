@@ -4,16 +4,18 @@
 class BTree
 {
 private:
-	Result SearchBTree(BTNode*& T, KeyType key);
-	void InsertBTree(BTNode*& T, KeyType key, Btree T, int i);
-	//void DeleteBTree();//未完成函数,后序补充
+	bool NodeExist;
+	void DeleteBTree(BTNode*& T);//删除整棵树
+
+	Result SearchBTreeNode(BTNode*& T, KeyType key);
+	void InsertBTreeNode(BTNode*& T, KeyType key, BTree q, int i);
 
 public:
 	BTNode* root;
 	BTree();
 	~BTree();
-	Result SearchBtree(KeyType key);
-	void InsertBTree(KeyType key);
-
+	Result SearchBtreeNode(KeyType key);
+	void InsertBTreeNode(KeyType key);
+	void MakeEmpty();//删除整棵树,使之成为空树
 };
 

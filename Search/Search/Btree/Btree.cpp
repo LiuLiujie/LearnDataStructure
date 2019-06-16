@@ -1,6 +1,18 @@
 #include "Btree.h"
 
-Result BTree::SearchBTree(BTNode*& T, KeyType key)
+void BTree::DeleteBTree(BTNode*& T)
+{
+	if (T)
+	{
+		for (int i = 0; i < BTOrder + 1; i++)
+		{
+			DeleteBTree(T->ptr[i]);
+		}
+		delete T;
+	}
+}
+
+Result BTree::SearchBTreeNode(BTNode*& T, KeyType key)
 {
 	BTNode* p = T, * q = nullptr;//p指向待查结点,q指向p的双亲
 	bool found = false;
@@ -23,4 +35,18 @@ Result BTree::SearchBTree(BTNode*& T, KeyType key)
 
 BTree::BTree() :root(nullptr)
 {
+}
+
+BTree::~BTree()
+{
+	if (root)
+	{
+		MakeEmpty();
+	}
+}
+
+void BTree::MakeEmpty()
+{
+	DeleteBTree(root);
+	root = nullptr;
 }
