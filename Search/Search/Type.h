@@ -52,16 +52,18 @@ private:
 
 	int Search(KeyType key)//未测试
 	{
-		for (int i = 1; i <= keyNum; i++) {
-			if (key >= K[i]) {
-				if (i + 1 <= keyNum && key < K[i+1]) {
-					return i;
-				} else {
-					return keyNum;//比最后一个K大,返回最大值
-				}
+		int i;
+		for (i = 1; i <= keyNum; ) {
+			if (key < K[i]) {//小于,返回的是指针域的位置
+				return i - 1;
+			}
+			else if (key > K[i]) {//大于,继续查找
+				i++;
+			}else{//等于,返回的是数据域的位置
+				return i;
 			}
 		}
-		return 1;//比第一个K小,返回1
+		return i - 1;//到最后也没一找到,返回最大指针域的位置
 	}
 };
 

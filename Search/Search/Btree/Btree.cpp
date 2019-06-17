@@ -18,19 +18,24 @@ Result BTree::SearchBTreeNode(BTNode*& T, KeyType key)
 	bool found = false;
 	int i = 0;
 	while (p && !found) {
-		i = p->Search(key);//在本节点中查找,使得i在两个关键字之间
-		if (i > 0 && p->K[i] == key) {
+		i = p->Search(key);//在本节点查找
+		if (i > 0 && p->K[i] == key) {//在本节点找到了
 			found = true;
-		} else {
+		} else {//在本节点未找到,去下一个结点找
 			q = p;
 			p = p->ptr[i];
 		}
 		if (found) {
 			return Result{ p, i, 1 };//查找成功,返回待查结点
 		} else {
-			return Result{ q, i, 0 };//查找失败,返回应该插入key的位置
+			return Result{ q, i, 0 };//查找失败,返回应该插入该key的位置(便于后续插入)
 		}
 	}
+}
+
+void BTree::InsertBTreeNode(BTNode*& T, KeyType key, BTNode* q, int i)
+{
+	BTNode* ap = nullptr;
 }
 
 BTree::BTree() :root(nullptr)
@@ -42,6 +47,24 @@ BTree::~BTree()
 	if (root)
 	{
 		MakeEmpty();
+	}
+}
+
+Result BTree::SearchBTreeNode(KeyType key)
+{
+	return SearchBTreeNode(root, key);
+}
+
+void BTree::InsertBTreeNode(KeyType key)
+{
+	Result res;
+	res = SearchBTreeNode(key);
+	if (res.tag == 0)//即查找失败,此时res中返回的是应该插入的结点
+	{
+		InsertBTreeNode(root, key, res.pt, res.i);
+	}else
+	{
+		std::cout << "结点已存在,无需重复插入" << std::endl;
 	}
 }
 
