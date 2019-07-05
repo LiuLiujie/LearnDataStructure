@@ -23,6 +23,7 @@
     <ProjectGuid>{6AB80FC9-6814-4C3D-B6FE-F85B86CB8E3B}</ProjectGuid>
     <RootNamespace>StackandQueue</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>Stack</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
