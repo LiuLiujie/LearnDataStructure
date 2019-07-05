@@ -9,7 +9,9 @@ Stack::Stack()
 
 Stack::~Stack()
 {
-	MakeEmpty();
+	if (!Empty()) {
+		MakeEmpty();
+	}
 }
 
 void Stack::Push(KeyType x)
@@ -65,5 +67,8 @@ void Stack::MakeEmpty()
 	while (!Empty()) {
 		Pop();
 	}
+	delete top;
+	top = nullptr;
+	base = nullptr;
 }
 
